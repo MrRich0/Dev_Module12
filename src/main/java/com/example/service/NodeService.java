@@ -23,13 +23,13 @@ public class NodeService {
         }
     }
 
-    public void getById(long id){
+    public Note getById(long id){
         for(Note note : notes) {
             if(note.getId() == id) {
-                System.out.println(note);
-                break;
+                return note;
             }
         }
+        return null;
     }
 
     public void update(Note note,String newTitle, String newContent) {
