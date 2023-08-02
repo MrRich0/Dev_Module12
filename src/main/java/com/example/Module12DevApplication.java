@@ -25,8 +25,8 @@ public class Module12DevApplication {
 		nodeService.update(nodeService.listAll().get(0),"F","Q");
 
 		System.out.println("ListAll = " + nodeService.listAll());
-		nodeService.getById(nodeService.listAll().get(0).getId());
+		System.out.println("getById = " + nodeService.getById(nodeService.listAll().get(0).getId()));
 
-		}
+	}
 
 }
